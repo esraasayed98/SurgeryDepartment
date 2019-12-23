@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+	
+	<title>Head of surgery department </title>
+</head>
+<body>
+
+	<h1> Welcome doctor Ahmed </h1>
+	<p> Head of Surgery department</p>
+	<h3> Information:</h3>
+	<p></p>
+
+   <a href ="http://127.0.0.1:9000/viewsurgeons">  <button class="A" type="button"  >View Surgeons  </button></a>
+	<a href="http://127.0.0.1:9000/addsurgeon"> <button class="B" onclick=""    type="button"  >ADD Surgeon    </button></a>
+	<a href="http://127.0.0.1:9000/deletedoctor"><button class="C"   type="button"  >Delete Surgeon    </button></a>
+	
+  <div class="contain1" >
+
+       <a href="{{url_for('applyforsurgery')}}">
+    
+		<img class="D" src="static/css/apply_for_surgery.png">
+  </a>
+     <div class="overlay">Apply for a surgery </div>
+
+</div>
+<div class="contain3" >
+       <a href="{{url_for('patientinfo')}}">
+        <img class="E" src="static/css/patients.jpg">
+       </a>
+     <div class="overlay">Patients information </div>
+ </div>  
+	<a href="{{url_for('signin')}}" ><button class="F"   type="button"  >Back </button> </a>
+       
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/add.css')}}">
+  
+      <title>Add a new surgeon </title>
+        
+   </head>
+
+   <body>
+
+      <h1>Add new doctor</h1>
+
+     
+     <a href="http://127.0.0.1:9000/viewsurgeons"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+      <a href="http://127.0.0.1:9000/addsurgeon"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="http://127.0.0.1:9000/deletedoctor"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+     <a href="http://127.0.0.1:9000/head"> <button class="b4"   type="button"  >Home   </button> </a>
+
+      
+
+      <form class="f1" action="http://127.0.0.1:9000/addsurgeon" method="POST">
+
+        user name: <input  class="B" type="text" name="user_name" ><br>
+        password: <input  class="B" type="text" name="pass_word" >
+  <div class="A">
+   name: <input  class="B" type="text" name="name" >
+  </div>
+  
+<div class="G">
+
+ ID: <input  class="H" type="number"  name="D_id" >
+</div>
+
+<div class="C">
+   Age: <input  class="D" type="number" name="age" >
+  </div>
+
+<div class="E">
+   Gender: <input  class="F" type="text" name="gender" >
+  </div>
+  <div class="I">
+   Start Date: <input  class="J" type="Date" name="start_date" >
+  </div>
+  <div class="K">
+   Degree: <input  class="L" type="text" name="degree" >
+  </div>
+  <div class="M">
+   Department: <input  class="N" type="text" name="department" >
+  </div>
+
+  <div class="O">
+   Phone: <input  class="P" type="number" name="phone" >
+  </div>
+
+  <div class="Q">
+   Mail: <input  class="R" type="text" name="mail" >
+  </div>
+  
+
+  <input class="Z" type="submit" value="Submit">
+</form> 
+
+
+   </body>
+</html> 

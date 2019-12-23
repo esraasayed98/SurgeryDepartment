@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign in</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/apply.css')}}">
+  </head>
+ 
+<body>
+
+<h1>Apply for a surgery</h1>
+<h2>*Patient information:*</h2>
+<form class="f1"  action="http://127.0.0.1:9000/applyforsurgery" method="POST">
+	<div class="A">
+   Name: <input  class="B" type="text" name="name" >
+  </div>
+
+  <div class="C">
+  Patient ID: <input  class="D" type="number"  name="P_id" >
+
+</div>
+<br><br>
+<div class="O">
+Doctor ID: <input  class="P" type="number"  name="d_id" >
+</div>
+<div class="E">
+
+ Age: <input  class="F" type="text"  name="age" >
+</div>
+<div class="G">
+
+  Gender: <input  class="H" type="text"  name="gender" >
+</div>
+<div class="I">
+
+  Visit Date: <input  class="J" type="Date"  name="visit_date" >
+</div>
+<div class="K">
+
+  Surgery Date: <input  class="L" type="Date"  name="surgery_date" >
+</div>
+<div class="M">
+
+ Surgery Time: <input  class="N" type="Time"  name="surgery_time" >
+</div>
+
+<div class="x">
+
+ Urgency: <input  class="y" type="text"  name="urgency" >
+</div>
+
+  <input class="Z" type="submit" value="Submit">
+</form> 
+
+
+
+</body>
+</html>

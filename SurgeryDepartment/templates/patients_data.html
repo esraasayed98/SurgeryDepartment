@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+        </style>
+         <title>search for a patient </title>
+         <!-- <link rel="stylesheet" type="text/css" href="/static/patient_id.css"> -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    </head>
+    <body>
+
+        <h1>View patients information </h1>
+
+    <table>
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+
+    </body>
+
+<!-- <table style="width:100%" id="Patients">
+  <tr>
+    <th> ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Gender</th> 
+    <th>Age</th>
+    <th>Birth date</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th> Entery date</th>
+    <th> Medical History </th>
+    <th>surgeries</th>
+    <th>Medical Images</th>
+  </tr>
+  <tr>
+    <td>001</td>
+    <td>Khaled</td>
+    <td>Hesham</td>
+    <td>Male</td>
+    <td>30</td>
+    <td>25-12-1990</td>
+    <td>0123456789</td>
+    <td></td>
+    <td>3-11-2019</td>
+    <td>bllod suger , high blood pressure</td>
+    <td>open heart</td>
+    <td></td>
+  </tr> 
+  
+</table> -->
+</html>

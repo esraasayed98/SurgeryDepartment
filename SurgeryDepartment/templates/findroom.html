@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+  		 <title>search for a room </title>
+  		 <link rel="stylesheet" type="text/css" href="/static/patient_id.css">
+  		 <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+    <body>
+
+    	<h1> Search for room occuption </h1>
+	    <a href ="doctors.html"><button class="E"  type="button"  >Back </button> </a>
+  
+      <form action="http://127.0.0.1:9000/findrooms" method="POST">
+        <div class="A">
+        Room ID: <input  class="B" type="ID" name="Room ID" >
+        </div>
+
+        <div class="A">
+            Department ID: <input  class="B" type="ID" name="Department ID" >
+            </div>
+
+            <input type="submit" value="Submit">
+        
+        
+      </form>
+ 
+      
+  	</body>
+</html>
