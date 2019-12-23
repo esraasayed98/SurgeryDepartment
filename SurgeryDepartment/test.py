@@ -18,13 +18,13 @@ def signin():
 	if request.method == 'POST': 
 		username = request.form['user_name']
 		password = request.form['pass_word']
-		if str(request.form['user_name'])=='Ahmed':
+		if str(username)=='Ahmed' and password=='1234' :
 			return render_template('index.html')
 		else:	   
 			mycursor.execute("SELECT * FROM Doctors WHERE user_name='" +username+ "' and pass_word='" +password+ "' ")
 			data=mycursor.fetchone()
 			if data is None:
-				return render_template('sign-in.html',msg='Username or Password is wrong!') 
+				return render_template('sign-in.html', message="Username or Password may be wrong! ") 
 			else:
 				return render_template('doctors.html')
 	else:
@@ -55,13 +55,11 @@ def deletedoctor():
 	if request.method=='POST':
 		id=request.form['D_id']
 		mycursor.execute("SELECT * FROM Doctors WHERE D_id='" +id+ "'")
-		sid=mycursor.fetchone()
-		if sid is None:
-			flash("couldn't find the doctor" )
+		d=mycursor.fetchone()
+		if d is None:
 			return render_template('deletedoctor.html')
 		else:
-			flash("Data Deleted successfully")
-			mycursor.execute("DELETE FROM Doctors WHERE D_id = '" +id+"' ")
+			mycursor.execute("DELETE FROM Doctors WHERE D_id ='" +id+"' ")
 			mydb.commit()
 			return render_template('index.html')
 	else:
@@ -147,6 +145,19 @@ def findrooms():
       return render_template('viewroom.html',data=data)
    else:
       return render_template('findroom.html')
+
+
+@app.route('/statistics') 
+def statisics():
+	mycursor.execute("SELECT COUNT(Result) FROM Patients WHERE Result=1")
+	count=mycursor.fetchone()
+	mycursor.execute("SELECT COUNT(Result) FROM Patients ")
+	count1=mycursor.fetchone()
+	return render_template('statistics.html' ,message="surgerical statisics: "+str(count)+"sucess surgeries of "+str(count1))		
+
+
+# mycursor.execute("SELECT surgery_date,surgery_time From Patients WHERE surgery_date=%s AND surgery_time=%s ",(id1,))
+# myresult = mycursor.fetchall()
 
 if __name__ == '__main__':
 	app.run(debug=True , port=9000)
