@@ -5,9 +5,11 @@ body {
   background-attachment: fixed;
   background-size:100% 100%;
 
-
-
 }
+form{
+  margin-left: 500px; 
+}
+
 h1 {
 
   color: darkcyan;
@@ -48,7 +50,7 @@ cursor: pointer;
 
 position: absolute;
 left:1200px;
-bottom: 420px;
+bottom: 425px;
 background-color:darkcyan;
 border: none;
 color: white;
@@ -56,7 +58,7 @@ padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 22px;
+font-size: 20px;
 margin: 4px 2px;
 cursor: pointer;
 
@@ -65,18 +67,17 @@ cursor: pointer;
 .b3{
 
 position: absolute;
-left:1199px;
-bottom: 335px;
-
+left:1200px;
+bottom: 350px;
 background-color:darkcyan;
 border: none;
 color: white;
-padding: 16px 21px;
+padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 22px;
-margin: 5px 3px;
+font-size: 20px;
+margin: 4px 2px;
 cursor: pointer;
 
 }
@@ -84,45 +85,43 @@ cursor: pointer;
 .b4{
 
 position: absolute;
-left:1199px;
-bottom: 255px;
+left:1200px;
+bottom: 298px;
 background-color:darkcyan;
 border: none;
 color: white;
-padding: 20px 34px;
+padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 40px;
-margin: 5px 3px;
+font-size: 20px;
+margin: 4px 2px;
 cursor: pointer;
-
+width: 145px;
+}
+.b5{
+position: absolute;
+left:1200px;
+bottom: 245px;
+background-color:darkcyan;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+width: 145px;
 }
 button:hover {
 background-color:black;
 color:darkcyan;
 }
 
-
-
-
-.f1{
-	text-align: center;
-	transform: translate(-10%, 0%);
-	 box-sizing: border-box;
-	 
-}
-
-.A{
-   transform: translate(-5%, 20%);
-   font-size:40px;
-   margin: 20px;
-   color: darkcyan;
-}
 .B{
- 
-  
-  transform: translate(15%, 10%); 
+  transform: translate(10%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -135,18 +134,22 @@ color:darkcyan;
   cursor: pointer;
   border-radius: 10px;
 }
-
 .C{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
+  transform: translate(16%); 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .D{
- 
-  
-  transform: translate(15%, 20%); 
+  transform: translate(34%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -160,16 +163,21 @@ color:darkcyan;
   border-radius: 10px;
 }
 .E{
-	transform: translate(-5%, 30%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
+  transform: translate(51%); 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .F{
- 
-  
-  transform: translate(10%, 20%); 
+  transform: translate(43%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -183,16 +191,21 @@ color:darkcyan;
   border-radius: 10px;
 }
 .G{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
+  transform: translate(26%); 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .H{
- 
-  
-  transform: translate(35%, 20%); 
+  transform: translate(22%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -206,16 +219,21 @@ color:darkcyan;
   border-radius: 10px;
 }
 .I{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
+  transform: translate(26%); 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .J{
- 
-  
-  transform: translate(26%, 20%); 
+  transform: translate(2%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -229,16 +247,21 @@ color:darkcyan;
   border-radius: 10px;
 }
 .K{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
+  transform: translate(31%); 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .L{
- 
-  
-  transform: translate(33%, 20%); 
+  transform: translate(39%); 
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -251,104 +274,25 @@ color:darkcyan;
   cursor: pointer;
   border-radius: 10px;
 }
-.M{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
-}
-.N{
- 
-  
-  transform: translate(25%, 20%); 
-  background-color:lightsteelblue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.x{
-	transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
-}
-.y{
- 
-  
-  transform: translate(15%, 20%); 
-  background-color:lightsteelblue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+.f1{
+	text-align: center;
+	transform: translate(-10%, 0%);
+	 box-sizing: border-box;
+	 
 }
 
-.O{
-  transform: translate(-5%, 40%);
+.A{
+   transform: translate(-5%, 20%);
+   text-align: auto;
    font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
-}
-.P{
- 
-  
-  transform: translate(28%, 20%); 
-  background-color:lightsteelblue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.Q{
-  transform: translate(-5%, 40%);
-   font-size:40px;
-   margin: 20px;
-   
-    color: darkcyan;
-}
-.R{
- 
-  
-  transform: translate(10%, 10%); 
-  background-color:lightsteelblue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+   margin: auto;
+   color: darkcyan;
+   text-align: left;
 }
 
 .Z{
 
-  transform: translate(100%, 50%);
+  transform: translate(0%, 250%);
   
   background-color: darkcyan;
   border: none;

@@ -2,10 +2,14 @@
 <html>
     <head>
         <title>Doctors</title>
-        <link rel="stylesheet" href="{{url_for('static' ,filename='css/stlyledoc.css')}}">
-      </head>
+        <link rel="stylesheet" href="{{url_for('static' ,filename='css/stlyledoc.css')}}">   
+<!--  <link rel="stylesheet" type="text/css" href="stlyledoc.css">   
+ -->
+ </head>
 <body>
     <h1> Welcome doctor .....</h1>
+         <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
 
     <div class="contain1" >
 
@@ -24,15 +28,15 @@
 </div>
 <div class="contain2" >
 
-       <a href="http://127.0.0.1:9000/findrooms">
-        <img class="B" src="static/css/D.jpg"></a>
+       <a href="{{url_for('findrooms')}}">
+        <img class="B" src="static/css/my_surgeries_schedual.jpg"></a>
      <div class="overlay">OR Rooms schedual</div>
 
 </div>
 
 
       
-	<a href="{{url_for('signin')}}"><button class="E"   type="button"  >Back </button> </a>
+	<a href="{{url_for('signin')}}"><button class="Z"   type="button"  >Back </button> </a>
         
     
 

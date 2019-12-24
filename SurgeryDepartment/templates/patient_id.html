@@ -3,21 +3,22 @@
 
 	<head>
   		 <title>search for a patient </title>
-  		 <link rel="stylesheet" href="{{url_for('static', filename='css/patient_id.css')}}">
+   		 <link rel="stylesheet" href="{{url_for('static', filename='css/patient_id.css')}}">   
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	</head>
     <body>
+       <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
 
     	<h1> Search for patient Information </h1>
-	    <a href ="http://127.0.0.1:9000/signin"><button class="E"  type="button"  >Back </button> </a>
+	    <a href ="{{url_for('doctor')}}"><button class="E"  type="button"  >Back </button> </a>
   
-      <form action="http://127.0.0.1:9000/patientinfo" method="POST">
+      <form action="{{url_for('patientinfo')}}" method="POST">
         <div class="A">
         Doctor ID: <input  class="B" type="number" name="d_id" >
         </div>
-	      <input class="B" type="submit" value="Submit">
+	      <input class="Z" type="submit" value="Submit">
         
       </form>
 

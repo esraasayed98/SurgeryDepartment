@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{{url_for('static' ,filename='css/view.css')}}">
-  
+<!--   <link rel="stylesheet" href="{{url_for('static' ,filename='css/view.css')}}">-->
+<link rel="stylesheet" type="text/css" href="view.css">  
    <title>View</title>
        
    </head>
@@ -14,11 +14,14 @@
    <body>
       <h1>View all doctor</h1>
 
+
      
-     <a href="http://127.0.0.1:8000/surgeonsdata"> <button class="b1"   type="button"  >View Surgeons  </button></a>
-      <a href="http://127.0.0.1:8000/addsurgeon"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
-      <button class="b3"   type="button"  >Delete Surgeon    </button> 
-     <a href="http://127.0.0.1:8000/"> <button class="b4"   type="button"  >Home   </button> </a>
+     <a href="{{url_for('viewsurgeons')}}"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+     <a href="{{url_for('addsurgeon')}}"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="{{url_for('deletedoctor')}}"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+     <a href="{{url_for('head')}}"> <button class="b4"   type="button"  >Home   </button> </a>
+     <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
 
 
 

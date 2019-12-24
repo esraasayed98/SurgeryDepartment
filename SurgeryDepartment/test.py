@@ -67,6 +67,9 @@ def deletedoctor():
 @app.route('/head')
 def head():
 	return render_template('index.html')
+@app.route('/doctor')
+def doctor():
+	return render_template('doctors.html')
 
 @app.route('/viewsurgeons',methods = ['POST', 'GET'])
 def viewsurgeons():
@@ -147,8 +150,8 @@ def findrooms():
       return render_template('findroom.html')
 
 
-@app.route('/statistics') 
-def statisics():
+@app.route('/statistic') 
+def statisic():
 	mycursor.execute("SELECT COUNT(Result) FROM Patients WHERE Result=1")
 	count=mycursor.fetchone()
 	mycursor.execute("SELECT COUNT(Result) FROM Patients ")
@@ -159,5 +162,9 @@ def statisics():
 # mycursor.execute("SELECT surgery_date,surgery_time From Patients WHERE surgery_date=%s AND surgery_time=%s ",(id1,))
 # myresult = mycursor.fetchall()
 
+@app.route('/LogOut')
+def LogOut():
+	return render_template('/home.html')
+
 if __name__ == '__main__':
-	app.run(debug=True , port=9000)
+	app.run(debug=True , port=5000)

@@ -2,52 +2,55 @@
 <html>
 <head>
 	<title>sign in</title>
-	<link rel="stylesheet" href="{{url_for('static', filename='css/apply.css')}}">
-  </head>
+ 	<link rel="stylesheet" href="{{url_for('static', filename='css/apply.css')}}">  
+<!-- <link rel="stylesheet" type="text/css" href="apply.css">
+ --></head>
  
-<body>
+<body>S
 
 <h1>Apply for a surgery</h1>
 <h2>*Patient information:*</h2>
-<form class="f1"  action="http://127.0.0.1:9000/applyforsurgery" method="POST">
+     <a href="{{url_for('LogOut')}}"> <button class="b4"   type="button"  >Log Out   </button> </a>
+
+<form class="f1"  action="{{url_for('applyforsurgery')}}" method="POST">
 	<div class="A">
-   Name: <input  class="B" type="text" name="name" >
-  </div>
+   Name: <input  class="B" type="text" name="name" ><br>
+  <!-- </div>
 
-  <div class="C">
-  Patient ID: <input  class="D" type="number"  name="P_id" >
+  <div class="C"> -->
+  Patient ID: <input  class="C" type="number"  name="P_id" ><br>
 
-</div>
+<!-- </div>
 <br><br>
-<div class="O">
-Doctor ID: <input  class="P" type="number"  name="d_id" >
-</div>
-<div class="E">
+<div class="O"> -->
+Doctor ID: <input  class="D" type="number"  name="d_id" ><br>
+<!-- </div>
+<div class="E"> -->
 
- Age: <input  class="F" type="text"  name="age" >
-</div>
-<div class="G">
+ Age: <input  class="E" type="text"  name="age" ><br>
+<!-- </div>
+<div class="G"> -->
 
-  Gender: <input  class="H" type="text"  name="gender" >
-</div>
+  Gender: <input  class="F" type="text"  name="gender" ><br>
+<!-- </div>
 <div class="I">
+ -->
+  Visit Date: <input  class="G" type="Date"  name="visit_date" ><br>
+<!-- </div>
+<div class="K"> -->
 
-  Visit Date: <input  class="J" type="Date"  name="visit_date" >
-</div>
+  Surgery Date: <input  class="H" type="Date"  name="surgery_date" ><br>
+<!-- </div>
+<div class="M"> -->
 
-
-<div class="K">
-
-  Surgery Date: <input  class="L" type="Date"  name="surgery_date" >
-</div>
-<div class="M">
-
- Surgery Time: <input  class="N" type="Time"  name="surgery_time" >
-</div>
+ Surgery Time: <input  class="I" type="Time"  name="surgery_time" ><br>
+<!-- </div>
 
 <div class="x">
+ -->
+ Patient Scans : <input  class="K" type="text"  name="Scans" ><br>
+ Urgency: <input  class="J" type="text"  name="urgency" ><br>
 
- Urgency: <input  class="y" type="text"  name="urgency" >
 </div>
 
   <input class="Z" type="submit" value="Submit">

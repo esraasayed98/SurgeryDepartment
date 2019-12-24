@@ -32,6 +32,8 @@ display: inline-block;
 font-size: 20px;
 margin: 4px 2px;
 cursor: pointer;
+width: 145px;
+
 
 }
 .b2{
@@ -39,7 +41,7 @@ cursor: pointer;
 
 position: absolute;
 left:1200px;
-bottom: 420px;
+bottom: 425px;
 background-color:darkcyan;
 border: none;
 color: white;
@@ -47,49 +49,68 @@ padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 22px;
+font-size: 20px;
 margin: 4px 2px;
 cursor: pointer;
+width: 145px;
+
+
 
 }
 
 .b3{
 
 position: absolute;
-left:1199px;
-bottom: 335px;
-
+left:1200px;
+bottom: 350px;
 background-color:darkcyan;
 border: none;
 color: white;
-padding: 16px 21px;
+padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 22px;
-margin: 5px 3px;
+font-size: 20px;
+margin: 4px 2px;
 cursor: pointer;
+width: 145px;
+
 
 }
 
 .b4{
 
 position: absolute;
-left:1199px;
-bottom: 255px;
+left:1200px;
+bottom: 298px;
 background-color:darkcyan;
 border: none;
 color: white;
-padding: 20px 34px;
+padding: 15px 20px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 35px;
-margin: 5px 3px;
+font-size: 20px;
+margin: 4px 2px;
 cursor: pointer;
-
+width: 145px;
 }
-
+.b5{
+position: absolute;
+left:1200px;
+bottom: 245px;
+background-color:darkcyan;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+width: 145px;
+}
 button:hover {
 background-color:black;
 color:darkcyan;
