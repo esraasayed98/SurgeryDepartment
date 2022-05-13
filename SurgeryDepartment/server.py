@@ -97,18 +97,23 @@ def applyforsurgery():
 		SD=request.form['surgery_date']
 		ST=request.form['surgery_time']
 		urgency=request.form['urgency']
-		sql = "INSERT INTO Patients(name, P_id ,d_id ,age,gender,visit_date,surgery_date,surgery_time,urgency) VALUES (%s,%s,%s, %s ,%s ,%s,%s, %s ,%s )"
-		val = (name,pid,Did,age,gender,VD,SD,ST,urgency)
-		mycursor.execute(sql, val)
-		mydb.commit() 
-		return render_template('apply_for_surgery.html') 
+		OR=request.form['OR_Room']
+		mycursor = mydb.cursor()
+		mycursor.execute("SELECT surgery_date, surgery_time,OR_Room FROM Patients WHERE surgery_time= '" +ST+"' AND surgery_date = '" +SD+ "' AND OR_Room= '" +OR+"' " )
+		myresult = mycursor.fetchall()
+		for x in myresult:
+			print(x)
+		if myresult  :
+			return render_template('doctors.html', message="room is already occupied! ") 
+		else:
+			sql = "INSERT INTO Patients(name, P_id ,d_id ,age,gender,visit_date,surgery_date,surgery_time,urgency,OR_Room) VALUES (%s,%s,%s, %s ,%s ,%s,%s, %s ,%s,%s )"
+			val = (name,pid,Did,age,gender,VD,SD,ST,urgency,OR)
+			mycursor.execute(sql, val)
+			mydb.commit() 
+			return render_template('doctors.html') 
 	else:
 			return render_template('apply_for_surgery.html')
 
-# @app.route('/searcdoctor')
-# def searcdoctor():
-#    return render_template('patient_id.html')
-#####to print the patients info according to doctor id and dep id
 @app.route('/patientinfo',methods = ['POST', 'GET'])
 def patientinfo():
 	if request.method == 'POST': 
@@ -125,12 +130,6 @@ def patientinfo():
 		return render_template('patients_data.html',data=data)
 	else:
 		return render_template('patient_id.html')
-
-
-# @app.route('/searchroom')
-# def searchroom():
-#    return render_template('findroom.html')
-#####to print the room info according to room id and dep id
 @app.route('/findrooms',methods = ['POST', 'GET'])
 def findrooms():
    if request.method == 'POST': 
@@ -157,14 +156,9 @@ def statisic():
 	mycursor.execute("SELECT COUNT(Result) FROM Patients ")
 	count1=mycursor.fetchone()
 	return render_template('statistics.html' ,message="surgerical statisics: "+str(count)+"sucess surgeries of "+str(count1))		
-
-
-# mycursor.execute("SELECT surgery_date,surgery_time From Patients WHERE surgery_date=%s AND surgery_time=%s ",(id1,))
-# myresult = mycursor.fetchall()
-
 @app.route('/LogOut')
 def LogOut():
 	return render_template('/home.html')
 
 if __name__ == '__main__':
-	app.run(debug=True , port=5000)
+	app.run(debug=True , port=7000)
